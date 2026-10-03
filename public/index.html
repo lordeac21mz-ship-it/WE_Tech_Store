@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>WE Tech — Loja Digital</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="/">WE<span>Tech</span></a>
+  <nav>
+    <a href="#produtos">Produtos</a>
+    <a href="#sobre">Sobre</a>
+    <button id="shareBtn" class="ghost">↗ Partilhar</button>
+    <button id="accountBtn" class="ghost">Conta</button>
+    <button id="gearBtn" class="iconbtn" title="Administração">⚙</button>
+  </nav>
+</header>
+
+<main>
+<section class="hero">
+  <div>
+    <p class="eyebrow">WE TECH • DO ROVUMA AO ÍNDICO</p>
+    <h1>Produtos digitais.<br><span>Experiência de verdade.</span></h1>
+    <p class="heroText">Encontra os teus jogos e produtos, compra de forma simples e acompanha tudo na tua conta.</p>
+    <a href="#produtos" class="primary">Explorar produtos</a>
+  </div>
+  <div class="heroOrb">WE<br><small>TECH</small></div>
+</section>
+
+<section id="produtos" class="section">
+  <div class="sectionHead">
+    <div><p class="eyebrow">CATÁLOGO</p><h2>Produtos em destaque</h2></div>
+    <div id="cartMini">🛒 <span>0</span></div>
+  </div>
+  <div id="products" class="grid">
+  <article class="card">
+    <div class="productImage"><div class="productIcon">🎮</div></div>
+    <div class="cardBody">
+      <h3>WE Tech Store</h3>
+      <div class="desc">Os produtos serão carregados aqui.</div>
+      <div class="price">WE TECH</div>
+      <div class="stock">Catálogo online</div>
+    </div>
+  </article>
+</div>
+</section>
+
+<section id="sobre" class="features">
+  <div><b>01</b><h3>Compra simples</h3><p>Escolhe o produto, coloca no carrinho e regista a compra.</p></div>
+  <div><b>02</b><h3>A tua conta</h3><p>Guarda os teus dados e consulta o histórico de compras.</p></div>
+  <div><b>03</b><h3>Partilha</h3><p>Envia a WE Tech para os teus amigos através de um link.</p></div>
+  <div><b>04</b><h3>Feedback</h3><p>Depois da compra, deixa a tua avaliação para ajudar a melhorar.</p></div>
+</section>
+</main>
+
+<div id="toast"></div>
+
+<div id="accountModal" class="modal hidden">
+ <div class="modalBox">
+  <button class="close" data-close>×</button>
+  <div id="accountContent"></div>
+ </div>
+</div>
+
+<div id="adminModal" class="modal hidden">
+ <div class="modalBox adminBox">
+  <button class="close" data-close>×</button>
+  <div id="adminContent"></div>
+ </div>
+</div>
+
+<script src="/app.js"></script>
+</body>
+</html>
